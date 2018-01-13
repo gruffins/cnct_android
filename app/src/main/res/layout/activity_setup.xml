@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_fileName="setup_loading.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/success_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:lottie_fileName="setup_success.json"
+            app:lottie_autoPlay="false" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/failure_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:lottie_fileName="setup_error.json"
+            app:lottie_autoPlay="false" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:alpha="0" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/retry_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:text="@string/setup_retry"/>
+
+</LinearLayout>

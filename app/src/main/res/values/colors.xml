@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#aaffffff</color>
+    <color name="dark_gray">#66000000</color>
+    <color name="secret_space">#9fe4ff</color>
+    <color name="blue_chips">#00a3af</color>
+    <color name="dark_blue">#1E769E</color>
+    <color name="chesca">#ddcfb1</color>
+    <color name="cant">#e0ecf1</color>
+    <color name="purple">#884898</color>
+</resources>

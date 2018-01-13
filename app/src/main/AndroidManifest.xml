@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ryanfung.cnct">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:name=".app.Application"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activities.LaunchActivity" android:theme="@style/AppTheme.Launch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.SetupActivity" android:theme="@style/AppTheme.Setup" />
+        <activity android:name=".activities.MainActivity" android:theme="@style/AppTheme.Main" />
+        <activity android:name=".activities.WelcomeActivity"
+            android:theme="@style/AppTheme.Welcome"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name=".activities.SignInActivity"
+            android:label="@string/sign_in_title"
+            android:theme="@style/AppTheme.SignIn"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name=".activities.EditProfileActivity"
+            android:label="@string/edit_profile"
+            android:parentActivityName=".activities.MainActivity"
+            android:windowSoftInputMode="stateUnchanged" />
+
+        <activity android:name=".activities.SettingsActivity"
+            android:label="@string/settings" />
+
+        <activity android:name=".activities.AddNetworkActivity"
+            android:label="@string/add_network" />
+
+        <meta-data android:name="com.ryanfung.cnct.client_authorization" android:value="${clientAuthorization}" />
+    </application>
+
+</manifest>

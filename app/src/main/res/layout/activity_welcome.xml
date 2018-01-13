@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:shadowColor="#33000000"
+        android:shadowRadius="5"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:alpha="0"
+        android:text="@string/welcome_tagline" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:alpha="0"
+        app:errorTextAppearance="@style/AppTheme.Welcome.TextInputError"
+        app:errorEnabled="true"
+        style="@style/AppTheme.Welcome.TextInputLayout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/username_edit_text"
+            android:hint="@string/welcome_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            style="@style/AppTheme.Welcome.EditText" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:errorTextAppearance="@style/AppTheme.Welcome.TextInputError"
+        app:errorEnabled="true"
+        style="@style/AppTheme.Welcome.TextInputLayout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email_edit_text"
+            android:hint="@string/welcome_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textEmailAddress"
+            style="@style/AppTheme.Welcome.EditText" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:errorTextAppearance="@style/AppTheme.Welcome.TextInputError"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        style="@style/AppTheme.Welcome.TextInputLayout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/password_edit_text"
+            android:hint="@string/welcome_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            style="@style/AppTheme.Welcome.EditText" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_submit"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/cant"
+        android:gravity="center"
+        android:text="@string/welcome_sign_in"
+        android:alpha="0" />
+
+</LinearLayout>

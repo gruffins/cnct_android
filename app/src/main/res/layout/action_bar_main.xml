@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_gravity="fill_horizontal"
+    android:onClick="editProfile"
+    tools:background="@color/blue_chips">
+
+    <com.ryanfung.cnct.views.UserIconView
+        android:id="@+id/action_bar_user_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:transitionName="edit_profile" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/action_bar_user_icon"
+        android:layout_toEndOf="@id/action_bar_user_icon"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        tools:text="Gruffins"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/action_bar_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar_title"
+        android:layout_toRightOf="@id/action_bar_user_icon"
+        android:layout_toEndOf="@id/action_bar_user_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-4dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:text="test@example.com" />
+
+</RelativeLayout>
